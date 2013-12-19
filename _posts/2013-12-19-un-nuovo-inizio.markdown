@@ -3,7 +3,7 @@ layout: post
 title:  "Un nuovo inizio"
 date:   2013-12-19 00:00:01
 group: "blog"
-categories: generics
+lang: it
 ---
 
 In preparazione all'anno 2014 una nuova location per il mio sito web [GitHub pages][github-pages]{:target="_blank"} e un nuovo motore: [Jekyll][jekyll]{:target="_blank"}.
