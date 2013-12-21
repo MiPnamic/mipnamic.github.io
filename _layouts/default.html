@@ -6,7 +6,7 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/css/syntax.css">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link rel="stylesheet" href="/css/mine.css">
@@ -21,8 +21,8 @@
 				<div class="header">
 					<ul class="nav nav-pills pull-right">
 						<li {% if page.group == 'home' %} class="active" {% endif %}><a href="/">Home</a></li>
+						<li {% if page.group == 'about' %} class="active" {% endif %}><a href="/developer">About</a></li>
 						<li {% if page.group == 'blog' %} class="active" {% endif %}><a href="/blog">Blog</a></li>
-						<li {% if page.group == 'about' %} class="active" {% endif %}><a href="/about">About</a></li>
 					</ul>
 					<h3 class="text-muted"><a href="/" class="pull-left"><img src="/assets/images/avatar/mipnamic40.png" class="img-rounded" /> {{ site.name }}</a></h3>
 				</div>
@@ -55,6 +55,12 @@
 									<i class="fa fa-linkedin fa-stack-1x"></i>
 								</span>
 							</a>
+							<a href="http://instagram.com/MiPnamic">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-instagram fa-stack-1x"></i>
+								</span>
+							</a>
 						</p>
 					</div>
 					<div class="col-md-4">
@@ -69,5 +75,13 @@
 		</div>
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-12963591-7', 'mipnamic.net');
+			ga('send', 'pageview');
+		</script>
     </body>
 </html>
