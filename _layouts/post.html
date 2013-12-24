@@ -9,4 +9,7 @@ layout: default
 <div class="post">
 {{ content }}
 </div>
-<p><a href="{{page.url}}"><i class="fa fa-link"></i> permalink</a></p>
+<p>
+	<a href="{{page.url}}"><i class="fa fa-link"></i> permalink</a>
+	<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url | url_escape}}{{page.url | uri_escape}}" target="_blank"><i class="fa fa-facebook"></i> share this</a>
+</p>
