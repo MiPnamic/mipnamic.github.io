@@ -4,15 +4,26 @@ layout: default
 <div class="page-header">
 	<h2><small><a href="/{{ page.group }}">{{ page.group }}</a> / </small>{{ page.title }}</h2>
 </div>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
+<div class="pull-right text-right">
+	<small>
+		<a href="{{page.url}}"><i class="fa fa-link"></i> permalink</a>
+		<br/>
+		<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url | url_escape}}{{page.url | uri_escape}}" target="_blank"><i class="fa fa-facebook"></i> share</a>
+		<br/>
+		<a href="https://twitter.com/share?url={{site.url | url_escape}}{{page.url | uri_escape}}"><i class="fa fa-twitter"></i> tweet</a>
+	</small>
+</div>
+<div class="meta">
+	<p>{{ page.date | date_to_string }}</p>
+</div>
 <div class="post">
 {{ content }}
 </div>
-<p>
-	<a href="{{page.url}}"><i class="fa fa-link"></i> permalink</a>
-	-
-	<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url | url_escape}}{{page.url | uri_escape}}" target="_blank"><i class="fa fa-facebook"></i> share</a>
-	-
-	<a href="https://twitter.com/share?url={{site.url | url_escape}}{{page.url | uri_escape}}"><i class="fa fa-twitter"></i> tweet</a>
-</p>
+<div class="btn-group">
+	{% if page.previous.url %} 
+		<a role="button" class="btn btn-default" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+	{% endif %} 
+	{% if page.next.url %}
+		<a role="button" class="btn btn-default" href="{{page.next.url}}" title="next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a> 
+    {% endif %}
+</div>
