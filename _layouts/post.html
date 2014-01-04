@@ -19,12 +19,18 @@ layout: default
 <div class="post">
 {{ content }}
 </div>
-<div class="btn-group">
-	{% if page.previous.url %} 
-		<a role="button" class="btn btn-default" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
-	{% endif %} 
-	<button type="button" class="btn btn-default">this post</button>
-	{% if page.next.url %}
-		<a role="button" class="btn btn-default" href="{{page.next.url}}" title="next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a> 
-    {% endif %}
+<div>
+	<ul class="pagination pagination-sm">
+		{% if page.previous.url %} 
+		<li><a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></li>
+		{% else %}
+		<li><a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+		{% endif %}
+		<li class="active"><a href="#">this post</a></li>
+		{% if page.next.url %}
+		<li><a href="{{page.next.url}}">{{page.next.title}} &raquo;</a></li>
+		{% else %}
+		<li class="disabled"><a href="#">&raquo;</a></li>
+		{% endif %}
+	</ul>
 </div>
