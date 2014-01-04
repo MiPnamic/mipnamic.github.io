@@ -61,6 +61,7 @@
 	 
 		<a role="button" class="btn btn-default" href="/2013/12/19/a-new-beginning.html" title="Previous Post: A new beginning">&laquo; A new beginning</a> 
 	 
+	<button type="button" class="btn btn-default">this post</button>
 	
 		<a role="button" class="btn btn-default" href="/2013/12/25/instead-of-sleeping.html" title="next Post: Instead of sleeping">Instead of sleeping &raquo; </a> 
     
@@ -71,7 +72,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<p class="text-muted">Last update on 25 Dec 2013 </p>
+						<p class="text-muted">Last update on 04 Jan 2014 </p>
 					</div>
 					<div class="col-md-4">
 						<p class="text-muted">
@@ -93,10 +94,28 @@
 									<i class="fa fa-linkedin fa-stack-1x"></i>
 								</span>
 							</a>
+							<a href="skype:mipnamic?call">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-skype fa-stack-1x"></i>
+								</span>
+							</a>
+							<a href="imessage:mipnamic@me.com">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-apple fa-stack-1x"></i>
+								</span>
+							</a>
 							<a href="http://instagram.com/MiPnamic">
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-square-o fa-stack-2x"></i>
 									<i class="fa fa-instagram fa-stack-1x"></i>
+								</span>
+							</a>
+							<a href="https://www.facebook.com/MiPnamic">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-facebook fa-stack-1x"></i>
 								</span>
 							</a>
 						</p>
@@ -120,6 +139,13 @@
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 			ga('create', 'UA-12963591-7', 'mipnamic.net');
 			ga('send', 'pageview');
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				if (window.instapicture == true) {
+					$('#instapictures').load('http://app.mipnamic.net/instagram.php');
+				}
+			});
 		</script>
     </body>
 </html>
