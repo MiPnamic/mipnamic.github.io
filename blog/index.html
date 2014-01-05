@@ -11,9 +11,12 @@ group: "blog"
 	<ul class="list-group">
 	{% for post in paginator.posts %}
 		<li class="list-group-item">
-			<a href="{{ post.url }}">{{ post.title }}</a> <span class="label label-default"><small>{{ post.date | date_to_string }}</small></span>
-			<a href="{{ post.url }}" role="button" class="pull-right btn btn-default btn-xs">read the post</a>
-			<p>{{ post.excerpt }}</p>
+			<p>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+				<span class="label label-default"><small>{{ post.date | date_to_string }}</small></span>
+				<a href="{{ post.url }}" role="button" class="pull-right btn btn-default btn-xs">read the post</a>
+			</p>
+			{{ post.excerpt }}
 		</li>
 	{% endfor %}
 </ul>
