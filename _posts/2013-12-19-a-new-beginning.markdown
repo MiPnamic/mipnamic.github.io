@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "A new beginning"
+title:  A new beginning
+category: Blog
 date:   2013-12-19 00:00:01
 group: "blog"
 lang: en
+tags: [personal, website]
 ---
 
 Preparing for the new year (2014) a new location for my website: [GitHub pages][github-pages]{:target="_blank"} and a new core: [Jekyll][jekyll]{:target="_blank"}.

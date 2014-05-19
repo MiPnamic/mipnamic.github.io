@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Unleash the dogs!"
+title:  Unleash the dogs!
+category: Blog
 date:   2014-02-01 15:48:00
 group: "blog"
 lang: en
+tags: [personal]
 ---
 
 Famous last words: "more than one update per day" and now?

@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "One update per day"
+title:  One update per day
+category: Blog
 date:   2013-12-21 13:41:00
 group: "blog"
 lang: en
+tags: [personal, website]
 ---
 
 The renewal process of a personal website is always something interesting to analyze.

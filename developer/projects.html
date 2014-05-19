@@ -1,71 +1,33 @@
 ---
-layout: default
-title: Projects
-group: "about"
-quote-to-show: 4
+layout: project
+title: The Projects
+category: MiPnamic Von Wirklichkeit
+group: "projects"
 ---
-
-<div id="developer">
-	<div class="page-header">
-		<h1><small><a href="/">home</a> / <a href="/developer">The Developer</a> </small> / Projects</h1>
-	</div>
-	<div class="row">
-		<div class="col-xs-12">
-			<p>As a Developer is too hard to realize that days count a limited amount of hours.</p>
-			<p>At the same time is not too hard to realize that this page will not contain all the stuff I'm involved. <small>This list is in Alphabetical order.</small></p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<h3>Crypto Tracker</h3>
-			<p><small>Open-source project to keep track of cryptocurrency finances inspired by <a href="http://openclerk.org" target="_blank">openclerk</a>.</small></p>
-			<p><a class="btn btn-default btn-xs disabled" href="#" role="button">no details atm</a></p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<h3>HeroQuest</h3>
-			<p><small>HTML5 tribute to this wonder of 1989</small></p>
-			<p><a class="btn btn-default btn-xs" href="https://github.com/MiPnamic/HeroQuest" target="_blank" role="button">View details »</a></p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<h3>Linkard</h3>
-			<p><small>An on-line service for creating digital business cards.</small></p>
-			<p><a class="btn btn-default btn-xs" href="http://linkard.it" target="_blank" role="button">View details »</a></p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<h3>LottoFacile</h3>
-			<p><small>A java application for statistical analysis.</small></p>
-			<p><a class="btn btn-default btn-xs" href="http://www.edcorporation.com/blog" target="_blank" role="button">View details »</a></p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<h3>OpenOTP Integration</h3>
-			<p><small>Studying the integration of the Two factor authentication in some open-source projects</small></p>
-			<p><a class="btn btn-default btn-xs disabled" href="#" role="button">no details atm</a></p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<h3>OpenSBAM</h3>
-			<p><small>Open-source Smart Energy Management software.</small></p>
-			<p><a class="btn btn-default btn-xs disabled" href="#" role="button">no details atm</a></p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<h3>SafePwd</h3>
-			<p><small>Password keeping and password generation software for Mac Os X.</small></p>
-			<p><a class="btn btn-default btn-xs disabled" href="#" role="button">no details atm</a></p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<h3>Unnamed 0</h3>
-			<p><small>Multi-platform browser with enhanced features for blogwriters.</small></p>
-			<p><a class="btn btn-default btn-xs disabled" href="#" role="button">no details atm</a></p>
-		</div>
-	</div>
-	<div class="row">
-		<blockquote>
-			<p>{{ site.data.quotes[page.quote-to-show].quote }}</p>
-			<small><cite title="{{ site.data.quotes[page.quote-to-show].author }}">{{ site.data.quotes[page.quote-to-show].author }}</cite></small>
-		</blockquote>
+<div class="row">
+	<div class="col-xs-12">
+		<p>As a Developer is too hard to realize that days count a limited amount of hours.</p>
+		<p>At the same time is not too hard to realize that this page will not contain all the stuff I'm involved. <small>This list is in Alphabetical order.</small></p>
 	</div>
 </div>
-<script type="text/javascript">
-window.instapicture = true;
-</script>
+<div class="row">
+    {% assign c = 0 %}
+    {% for project in site.data.projects %}
+        {% if c == 2 %}
+            </div>
+            <div class="row">
+                {% assign c = 0 %}
+        {% endif %}
+        <div class="col-xs-5 col-sm-5 col-md-5">
+            <p><strong>{{ project.title }}</strong> {% if project.url contains 'http' %}<a href="{{ project.url }}"  target="_blank" rel="me" role="button"><i class="fa fa-external-link"></i></a>{% endif %}<br/>
+            <small>{{ project.description }}</small></p>
+            <small>{% for tag in project.tags %} <span class="label label-default">{{ tag }}</span>{% endfor %}</small></p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="{{ project.progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ project.progress }}%;">
+                    {{ project.progress }}%
+                </div>
+            </div>
+        </div>
+        {% assign c = c | plus: 1 %}
+    {% endfor %}
+</div>

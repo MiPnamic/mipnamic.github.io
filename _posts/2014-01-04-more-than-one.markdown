@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "More than one"
+title:  More than one
+category: Blog
 date:   2014-01-04 14:36:00
 group: "blog"
 lang: en
+tags: [personal, website]
 ---
 
 More than one update per day... this start to seems like a job <i class="fa fa-smile-o"></i>.

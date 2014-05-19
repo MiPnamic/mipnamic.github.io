@@ -1,0 +1,65 @@
+- title: ADI
+  description: Integrated home care web based management software
+  url: #
+  tags: [php, mysql, laravel]
+  progress: 100
+
+- title: Crypto Tracker
+  description: FLOSS project about cryptocurrencies inspired by <a href='http://openclerk.org' target='_blank'>openclerk</a>.
+  url: #
+  tags: [php, mysql, laravel]
+  progress: 30
+
+- title: Domestics and Caregivers
+  description: Cross-platform payroll software written in Java
+  url: #
+  tags: [java, mysql]
+  progress: 60
+
+- title: HeroQuest
+  description: HTML5 tribute to this wonder of 1989. All rights reserved.
+  url: https://github.com/MiPnamic/HeroQuest
+  tags: [html5]
+  progress: 10
+
+- title: Importante per me
+  description: Website where people can post what really matter for them.
+  url: http://importanteper.me
+  tags: [php, mongodb, laravel]
+  progress: 50
+
+- title: Linkard
+  description: An on-line service for creating digital business cards.
+  url: http://linkard.it
+  tags: [php, mysql, laravel]
+  progress: 80
+
+- title: LottoFacile
+  description: Java application for statistical analysis.
+  tags: [java, mysql]
+  url: http://www.edcorporation.com/blog
+  progress: 50
+
+- title: OpenOTP Integration
+  description: Integration of the Two factor authentication in a FLOSS projects
+  url: #
+  tags: [php]
+  progress: 10
+
+- title: OpenSBAM
+  description: Open-source Smart Energy Management software.
+  url: #
+  tags: [zabbix]
+  progress: 0
+
+- title: SafePwd
+  description: Password keeping and password generation software for Mac Os X.
+  url: #
+  tags: [objective-c, sqlite]
+  progress: 70
+
+- title: Unnamed 0
+  description: Cross-platform browser with enhanced features for blogwriters.
+  url: #
+  tags: [objective-c, sqlite]
+  progress: 0

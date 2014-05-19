@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Happy new update"
+title:  Happy new update
+category: Blog
 date:   2014-01-04 03:23:00
 group: "blog"
 lang: en
+tags: [website]
 ---
 
 The first update of the year sees my [projects page][internal-projects] (reachable by my [bio][internal-bio]) updated with just few elements inside.

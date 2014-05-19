@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Instead of sleeping"
+title:  Instead of sleeping
+category: Blog
 date:   2013-12-25 01:06:00
 group: "blog"
 lang: en
+tags: [personal]
 ---
 
 Sleep is overrated. All the best realizations came at night.
