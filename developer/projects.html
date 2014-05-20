@@ -25,7 +25,7 @@ group: "projects"
         <div class="col-xs-5 col-sm-5 col-md-5">
             <p><strong>{{ project.title }}</strong> {% if project.url contains 'http' %}<a href="{{ project.url }}"  target="_blank" rel="me" role="button"><i class="fa fa-external-link"></i></a>{% endif %}<br/>
             <small>{{ project.description }}</small></p>
-            <small>{% for tag in project.tags %} <span class="label label-default">{{ tag }}</span>{% endfor %}</small>
+            <p><small>{% for tag in project.tags %} <span class="label label-default">{{ tag }}</span>{% endfor %}</small></p>
             <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="{{ project.progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ project.progress }}%;">
                     {{ project.progress }}%
