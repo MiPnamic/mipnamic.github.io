@@ -23,7 +23,7 @@ group: "projects"
                 {% assign c = 0 %}
         {% endif %}
         <div class="col-xs-5 col-sm-5 col-md-5">
-            <p><strong>{{ project.title }}</strong> {% if project.url contains 'http' %}<a href="{{ project.url }}"  target="_blank" rel="me" role="button"><i class="fa fa-external-link"></i></a>{% endif %}<br/>
+            <p><strong>{{ project.title }}</strong> {% if project.url contains 'http' %}<a href="{{ project.url }}"  target="_blank" rel="me" role="button"><i class="fa fa-external-link"></i></a>{% endif %} <span class="label label-{{ project.label }}">{{ project.status }}</span><br/>
             <small>{{ project.description }}</small></p>
             <p><small>{% for tag in project.tags %} <span class="label label-default">{{ tag }}</span>{% endfor %}</small></p>
             <div class="progress">

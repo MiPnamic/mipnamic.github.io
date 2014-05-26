@@ -3,63 +3,93 @@
   url: #
   tags: [php, mysql, laravel]
   progress: 100
+  status: completed
+  label: success
 
 - title: Crypto Tracker
   description: FLOSS project about cryptocurrencies inspired by <a href='http://openclerk.org' target='_blank'>openclerk</a>.
   url: #
-  tags: [php, mysql, laravel]
+  tags: [php, mysql, laravel, floss]
   progress: 30
+  status: stuck
+  label: danger
+
+- title: Datei
+  description: Web-based file management and organization
+  url: https://github.com/MiPnamic/datei
+  tags: [php, mongodb, twig, floss]
+  progress: 70
+  status: active
+  label: primary
 
 - title: Domestics and Caregivers
   description: Cross-platform payroll software written in Java
   url: #
   tags: [java, mysql]
   progress: 60
+  status: active
+  label: primary
 
 - title: HeroQuest
   description: HTML5 tribute to this wonder of 1989. All rights reserved.
   url: https://github.com/MiPnamic/HeroQuest
   tags: [html5]
   progress: 10
+  status: stuck
+  label: danger
 
 - title: Importante per me
   description: Website where people can post what really matter for them.
   url: http://importanteper.me
   tags: [php, mongodb, twig]
   progress: 50
+  status: active
+  label: success
 
 - title: Linkard
   description: An on-line service for creating digital business cards.
   url: http://linkard.it
   tags: [php, mysql, laravel]
   progress: 80
+  status: active
+  label: primary
 
 - title: LottoFacile
   description: Java application for statistical analysis.
   tags: [java, mysql]
   url: http://www.edcorporation.com/blog
   progress: 50
+  status: active
+  label: primary
 
 - title: OpenOTP Integration
   description: Integration of the Two factor authentication in a FLOSS projects
   url: #
   tags: [php]
   progress: 10
+  status: stuck
+  label: warning
 
 - title: OpenSBAM
   description: Open-source Smart Energy Management software.
   url: #
   tags: [zabbix]
   progress: 0
+  status: active
+  label: primary
 
 - title: SafePwd
   description: Password keeping and password generation software for Mac Os X.
   url: #
   tags: [objective-c, sqlite]
   progress: 70
+  status: stuck
+  label: warning
 
 - title: Unnamed 0
   description: Cross-platform browser with enhanced features for blogwriters.
   url: #
   tags: [objective-c, sqlite]
   progress: 0
+  status: stuck
+  label: danger
