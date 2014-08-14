@@ -15,7 +15,7 @@
   label: danger
 
 - title: Datei
-  description: Web-based file management and organization
+  description: Web-based file management and organization. A DMS that focus on tags.
   url: https://github.com/MiPnamic/datei
   tags: [php, mongodb, twig, floss]
   progress: 70

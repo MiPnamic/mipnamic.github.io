@@ -1,0 +1,45 @@
+@grey_color: #f5f5f5;
+@background_color: #ffffff;
+@fixed_height: 60px;
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+  height: 99%;
+  background-color: @background_color;
+}
+
+.header {
+  border-bottom: 1px solid @grey_color;
+  height: @fixed_height;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -@fixed_height;
+  padding: 0 0 @fixed_height;
+}
+
+#footer {
+  height: @fixed_height;
+  background-color: @grey_color;
+  text-align: center;
+  line-height: @fixed_height;
+}
+
+a:hover {
+	text-decoration: none; 
+}
+
+#instapictures img {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.page-header {
+    margin-top: 0px;
+}

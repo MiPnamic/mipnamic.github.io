@@ -1,36 +1,28 @@
 ---
-layout: main
+layout: default
+quote-to-show: 2
 ---
-<div class="pull-right text-right">
-	<small>
-		<a href="{{page.url}}"><i class="fa fa-link"></i> permalink</a>
-		<br/>
-		<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url | url_escape}}{{page.url | uri_escape}}" target="_blank"><i class="fa fa-facebook"></i> share</a>
-		<br/>
-		<a href="https://twitter.com/share?url={{site.url | url_escape}}{{page.url | uri_escape}}"><i class="fa fa-twitter"></i> tweet</a>
-	</small>
-</div>
-<div class="meta">
-	<p><span class="label label-default">wrote on {{ page.date }}</span><small> by <strong>MiPnamic</strong></small></p>
-</div>
-<div class="post">
-{{ content }}
-</div>
-<div class="tags">
-    {% for tag in page.tags %}<span class="label label-default"><small>{{ tag }}</small></span> {% endfor %}
-</div>
-<div>
-	<ul class="pagination pagination-sm">
-		{% if page.previous.url %} 
-		<li><a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></li>
-		{% else %}
-		<li><a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
-		{% endif %}
-		<li class="active"><a href="#">this post</a></li>
-		{% if page.next.url %}
-		<li><a href="{{page.next.url}}">{{page.next.title}} &raquo;</a></li>
-		{% else %}
-		<li class="disabled"><a href="#">&raquo;</a></li>
-		{% endif %}
-	</ul>
+<div class="row">
+    <div class="col-xs-12">
+        <div id="blog">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ page.title }}</h3><span class="label label-primary"><small>{{ page.date | date_to_string }}</small></span>
+                </div>
+                <div class="panel-body">
+                    {{ content }}
+                </div>
+                <div class="panel-footer">
+                    {% for tag in page.tags %}<span class="label label-default"><small>{{ tag }}</small></span> {% endfor %}
+                    <div class="pull-right text-right">
+                        <small>
+                            <a class="label label-default" href="{{page.url}}"><i class="fa fa-link"></i> permalink</a>
+                            <a class="label label-default" href="https://www.facebook.com/sharer/sharer.php?u={{site.url | url_escape}}{{page.url | uri_escape}}" target="_blank"><i class="fa fa-facebook"></i> share</a>
+                            <a class="label label-default" href="https://twitter.com/share?url={{site.url | url_escape}}{{page.url | uri_escape}}"><i class="fa fa-twitter"></i> tweet</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

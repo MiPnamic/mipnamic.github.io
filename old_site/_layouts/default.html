@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/css/bootstrap.min.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="/css/syntax.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/css/mine.css" />
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<meta property="og:url"		content="{{site.url}}{{page.url}}" />
+		<meta property="og:title"	content="{{page.title}}" />
+		<meta property="og:image"	content="{{site.url}}/assets/images/avatar/mipnamicfb.jpg" />
+		<meta property="og:locale"	content="en_US" />
+    </head>
+    <body>
+    	<div id="wrap">
+    		<div class="container">
+				<div class="header">
+					<ul class="nav nav-pills pull-right">
+						<li {% if page.group == 'home' %} class="active" {% endif %}><a href="/">Home</a></li>
+						<li {% if page.group == 'about' %} class="active" {% endif %}><a href="/developer">About</a></li>
+                        <li {% if page.group == 'projects' %} class="active" {% endif %}><a href="/developer/projects.html">Projects</a></li>
+						<li {% if page.group == 'blog' %} class="active" {% endif %}><a href="/blog">Blog</a></li>
+                        <li {% if page.group == 'privacy' %} class="active" {% endif %}><a href="/privacy">Privacy</a></li>
+					</ul>
+					<h3 class="text-muted"><a href="/" class="pull-left"><img src="/assets/images/avatar/mipnamic40.png" alt="mipnamic avatar" class="img-rounded" /> {{ site.name }}</a></h3>
+				</div>
+				{{ content }}
+	        </div>
+	    </div>
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<p class="text-muted">Last update on {{ site.time | date_to_string }} </p>
+					</div>
+					<div class="col-md-4">
+						<p class="text-muted">
+							<a href="https://github.com/MiPnamic" target="_blank" rel="me">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-github fa-stack-1x"></i>
+								</span>
+							</a>
+							<a href="https://twitter.com/MiPnamic" target="_blank" rel="me">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-twitter fa-stack-1x"></i>
+								</span>
+							</a>
+							<a href="http://it.linkedin.com/in/mipnamic/" target="_blank" rel="me">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-linkedin fa-stack-1x"></i>
+								</span>
+							</a>
+							<a href="skype:mipnamic?call" rel="me">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-skype fa-stack-1x"></i>
+								</span>
+							</a>
+							<a href="imessage:mipnamic@me.com" rel="me">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-apple fa-stack-1x"></i>
+								</span>
+							</a>
+							<a href="http://instagram.com/MiPnamic" target="_blank" rel="me">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-instagram fa-stack-1x"></i>
+								</span>
+							</a>
+							<a href="https://www.facebook.com/MiPnamic" target="_blank" rel="me">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-facebook fa-stack-1x"></i>
+								</span>
+							</a>
+						</p>
+					</div>
+					<div class="col-md-4">
+						<p>
+							<a href="http://jekyllrb.com" target="_blank"><img src="/assets/images/logos/jekyll.png" alt="jekyll logo" /></a>
+							<a href="http://fontawesome.io" target="_blank" class="btn btn-info"><i class="fa fa-flag"></i></a>
+							<a href="https://github.com" target="_blank"><img src="/assets/images/logos/github.png" alt="github logo" /></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery.js"></script><script src="/js/bootstrap.min.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-12963591-7', 'mipnamic.net');
+			ga('send', 'pageview');
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				if (window.instapicture == true) {
+					$('#instapictures').load('http://app.mipnamic.net/instagram.php');
+				}
+			});
+		</script>
+    </body>
+</html>

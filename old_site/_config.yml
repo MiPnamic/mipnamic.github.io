@@ -1,0 +1,7 @@
+name: MiPnamic Von Wirklichkeit
+markdown: kramdown
+pygments: true
+timezone: Europe/Rome
+paginate: 20
+paginate_path: "blog/page:num"
+url: http://mipnamic.net
