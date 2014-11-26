@@ -1,0 +1,3 @@
+[submodule "Demo/AngularJS-Refinements"]
+	path = Demo/AngularJS-Refinements
+	url = https://github.com/MiPnamic/AngularJS-Refinements.git
